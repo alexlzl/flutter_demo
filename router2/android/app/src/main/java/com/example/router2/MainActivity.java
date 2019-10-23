@@ -1,6 +1,7 @@
-package com.example.flutter_demo;
+package com.example.router2;
 
 import android.os.Bundle;
+
 import io.flutter.app.FlutterActivity;
 import io.flutter.plugins.GeneratedPluginRegistrant;
 
