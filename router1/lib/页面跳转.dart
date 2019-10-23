@@ -3,8 +3,17 @@ import 'package:flutter/material.dart';
 import '有默认占位图和淡入效果.dart';
 
 void main() => runApp(MaterialApp(
+      // 设置第一个页面，即启动页
+      initialRoute: '/',
+      routes: {
+        // 注册一个页面
+        '/': (context) => SplashPage(),
+        // 注册第二个页面
+        '/second': (context) => HomePage(),
+      },
+
       title: 'Flutter',
-      home: SplashPage(),
+//      home: SplashPage(),
     ));
 
 class SplashPage extends StatelessWidget {
@@ -25,7 +34,7 @@ class SplashPage extends StatelessWidget {
           // 设置点击事件
           onTap: () {
             // 使用 Navigator 跳转页面
-            Navigator.push(context, MaterialPageRoute(builder: (_) {
+            Navigator.push(context, new MaterialPageRoute(builder: (_) {
               return HomePage();
             }));
           },
