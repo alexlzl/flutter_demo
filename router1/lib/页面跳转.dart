@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '有默认占位图和淡入效果.dart';
+
 void main() => runApp(MaterialApp(
       title: 'Flutter',
       home: SplashPage(),
@@ -7,7 +9,7 @@ void main() => runApp(MaterialApp(
 
 class SplashPage extends StatelessWidget {
   final splashUrl =
-      'https://raw.githubusercontent.com/chenBingX/img/master/其它/u=343452579,826911251&fm=26&gp=0.jpg';
+      'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571836262402&di=96957970025fa1061c28854bcfeabee1&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201312%2F04%2F20131204184148_hhXUT.jpeg';
 
   @override
   Widget build(BuildContext context) {
@@ -24,12 +26,12 @@ class SplashPage extends StatelessWidget {
           onTap: () {
             // 使用 Navigator 跳转页面
             Navigator.push(context, MaterialPageRoute(builder: (_) {
-///              return HomePage();
+              return HomePage();
             }));
           },
           child: Container(
               width: 100,
-              height: 40,
+              height: 100,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(6)),
                 gradient: LinearGradient(
@@ -38,7 +40,7 @@ class SplashPage extends StatelessWidget {
               ),
               child: Center(
                   child: Text(
-                "Next",
+                "测试Navigator",
                 style: TextStyle(color: Colors.white, fontSize: 16),
               ))),
         ),
