@@ -13,8 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      navigatorKey: new GlobalKey(),
       initialRoute: '/',  //配置默认访问路径
-      onGenerateRoute:onGenerateRoute,
+      ///当通过Navigation.of(context).pushNamed跳转路由时，
+      //在routes查找不到时，会调用该方法
+      onGenerateRoute:onGenerateRoute,//
     );
   }
 }

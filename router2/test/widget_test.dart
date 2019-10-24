@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:router2/main.dart';
+import 'package:router2/路由抽离.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
