@@ -6,7 +6,7 @@ class SortedCollection {
   SortedCollection(this.compare);
 }
 
-int sort(Object a, Object b) {}
+int sort(_, Object b) {}
 
 main() {
   SortedCollection collection = new SortedCollection(sort);
