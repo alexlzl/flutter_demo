@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '有默认占位图和淡入效果.dart';
+/*
 
+ */
 void main() => runApp(MaterialApp(
       // 设置第一个页面，即启动页
       initialRoute: '/',
