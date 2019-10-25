@@ -13,6 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      showSemanticsDebugger: true,
       navigatorKey: new GlobalKey(),
       initialRoute: '/',  //配置默认访问路径
       ///当通过Navigation.of(context).pushNamed跳转路由时，
